@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="es" data-darkreader-mode="dynamic" data-darkreader-scheme="dark"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--user-agent" media="screen">@layer {
+html {
+    background-color: var(--darkreader-background-ffffff, #181a1b) !important;
+}
+html {
+    color-scheme: dark !important;
+}
+iframe {
+    color-scheme: dark !important;
+}
+html, body {
+    background-color: var(--darkreader-background-ffffff, #181a1b);
+}
+html, body {
+    border-color: var(--darkreader-border-4c4c4c, #736b5e);
+    color: var(--darkreader-text-000000, #e8e6e3);
+}
+a {
+    color: var(--darkreader-text-0040ff, #3391ff);
+}
+table {
+    border-color: var(--darkreader-border-808080, #545b5e);
+}
+mark {
+    color: var(--darkreader-text-000000, #e8e6e3);
+}
+::placeholder {
+    color: var(--darkreader-text-a9a9a9, #b2aba1);
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: var(--darkreader-background-faffbd, #404400) !important;
+    color: var(--darkreader-text-000000, #e8e6e3) !important;
+}
+::selection {
+    background-color: var(--darkreader-background-0060d4, #004daa) !important;
+    color: var(--darkreader-text-ffffff, #e8e6e3) !important;
+}
+::-moz-selection {
+    background-color: var(--darkreader-background-0060d4, #004daa) !important;
+    color: var(--darkreader-text-ffffff, #e8e6e3) !important;
+}
+}</style><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, img.Wirisformula, a[data-testid="headerMediumLogo"]>svg, .d2l-navigation-link-image-container, .d2l-iframe-loading-container, div.mc-ip-hide[style*="background: rgb(255, 255, 255) !important"] {
+    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+  background-color: var(--darkreader-inline-bgcolor) !important;
+}
+[data-darkreader-inline-bgimage] {
+  background-image: var(--darkreader-inline-bgimage) !important;
+}
+[data-darkreader-inline-border] {
+  border-color: var(--darkreader-inline-border) !important;
+}
+[data-darkreader-inline-border-bottom] {
+  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+}
+[data-darkreader-inline-border-left] {
+  border-left-color: var(--darkreader-inline-border-left) !important;
+}
+[data-darkreader-inline-border-right] {
+  border-right-color: var(--darkreader-inline-border-right) !important;
+}
+[data-darkreader-inline-border-top] {
+  border-top-color: var(--darkreader-inline-border-top) !important;
+}
+[data-darkreader-inline-boxshadow] {
+  box-shadow: var(--darkreader-inline-boxshadow) !important;
+}
+[data-darkreader-inline-color] {
+  color: var(--darkreader-inline-color) !important;
+}
+[data-darkreader-inline-fill] {
+  fill: var(--darkreader-inline-fill) !important;
+}
+[data-darkreader-inline-stroke] {
+  stroke: var(--darkreader-inline-stroke) !important;
+}
+[data-darkreader-inline-outline] {
+  outline-color: var(--darkreader-inline-outline) !important;
+}
+[data-darkreader-inline-stopcolor] {
+  stop-color: var(--darkreader-inline-stopcolor) !important;
+}
+[data-darkreader-inline-bg] {
+  background: var(--darkreader-inline-bg) !important;
+}
+[data-darkreader-inline-border-short] {
+  border: var(--darkreader-inline-border-short) !important;
+}
+[data-darkreader-inline-border-bottom-short] {
+  border-bottom: var(--darkreader-inline-border-bottom-short) !important;
+}
+[data-darkreader-inline-border-left-short] {
+  border-left: var(--darkreader-inline-border-left-short) !important;
+}
+[data-darkreader-inline-border-right-short] {
+  border-right: var(--darkreader-inline-border-right-short) !important;
+}
+[data-darkreader-inline-border-top-short] {
+  border-top: var(--darkreader-inline-border-top-short) !important;
+}
+[data-darkreader-inline-invert] {
+    filter: invert(100%) hue-rotate(180deg);
+}</style><style class="darkreader darkreader--variables" media="screen">:root {
+   --darkreader-neutral-background: var(--darkreader-background-ffffff, #181a1b);
+   --darkreader-neutral-text: var(--darkreader-text-000000, #e8e6e3);
+   --darkreader-selection-background: var(--darkreader-background-0060d4, #004daa);
+   --darkreader-selection-text: var(--darkreader-text-ffffff, #e8e6e3);
+}</style><style class="darkreader darkreader--root-vars" media="screen"></style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asterope Consulting — Consultoría de Negocios y Operaciones</title>
+    <meta name="description" content="Consultoría estratégica de negocios y operaciones. Claridad, alineación y rendimiento estelar para empresas en crecimiento.">
+    <meta name="author" content="Asterope Consulting LLC">
+
+    
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/676f8a63-d061-457b-b4c7-5568dbeeaf57/id-preview-49c87d01--59059dda-1f26-4b24-abec-39d752b1f330.lovable.app-1776471818796.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Lovable">
+    <meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/676f8a63-d061-457b-b4c7-5568dbeeaf57/id-preview-49c87d01--59059dda-1f26-4b24-abec-39d752b1f330.lovable.app-1776471818796.png">
+    <meta property="og:title" content="Asterope Consulting — Consultoría de Negocios y Operaciones">
+  <meta name="twitter:title" content="Asterope Consulting — Consultoría de Negocios y Operaciones">
+  <meta property="og:description" content="Consultoría estratégica de negocios y operaciones. Claridad, alineación y rendimiento estelar para empresas en crecimiento.">
+  <meta name="twitter:description" content="Consultoría estratégica de negocios y operaciones. Claridad, alineación y rendimiento estelar para empresas en crecimiento.">
+  <link rel="icon" type="image/x-icon" href="https://build-my-site-926.lovable.app/favicon.ico">
+  <script type="module" crossorigin="" src="reference_files/index-QboooWEL.js"></script>
+  <link rel="stylesheet" crossorigin="" href="reference_files/index-Wd5-RiB1.css"><style class="darkreader darkreader--sync" media="screen"></style>
+
+<style>
+	@font-face {
+		font-family: 'CameraPlainVariable';
+		src: url('https://cdn.gpteng.co/mcp-widgets/v1/fonts/CameraPlainVariable.woff2') format('woff2');
+		font-weight: 100 900;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	#lovable-badge {
+		--badge-bg: #1b1b1b;
+		--badge-text: #c5c1b9;
+		--badge-text-hover: #dcdad5;
+		--badge-radius: 6px;
+		--badge-padding: 8px;
+		--badge-gap: 6px;
+		--badge-shadow: 
+			0 0 0 1px rgba(0, 0, 0, 0.88),
+			0 1px 0 0 rgba(0, 0, 0, 0.04),
+			0 2px 2px -1px rgba(0, 0, 0, 0.08),
+			0 4px 4px -2px rgba(0, 0, 0, 0.08),
+			0 8px 8px -4px rgba(0, 0, 0, 0.08),
+			0 16px 16px -8px rgba(0, 0, 0, 0.08);
+		--badge-transition-duration: 0.2s;
+		--badge-transition-easing: cubic-bezier(0.16, 1, 0.32, 1);
+		--focus-color: #575ECF;
+		--focus-offset: 2px;
+		--focus-width: 2px;
+		
+		position: fixed;
+		bottom: 12px;
+		right: 12px;
+		height: 24px;
+		display: flex;
+		align-items: center;
+		z-index: 1000000;
+		background-color: var(--badge-bg);
+		color: var(--badge-text);
+		border-radius: var(--badge-radius);
+		box-shadow: var(--badge-shadow);
+		font-size: 12px;
+		font-family: CameraPlainVariable, "CameraPlainVariable Fallback", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		font-weight: 400 !important;
+		text-transform: none !important;
+		font-feature-settings: normal !important;
+		transform: translateZ(0);
+		will-change: transform, opacity;
+	}
+
+	#lovable-badge-cta {
+		display: flex;
+		align-items: center;
+		gap: var(--badge-gap);
+		padding: 0 var(--badge-padding);
+		height: 100%;
+		color: inherit;
+		text-decoration: none;
+		white-space: nowrap;
+		border-radius: var(--badge-radius) 0 0 var(--badge-radius);
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-cta:hover {
+		background: rgba(255, 255, 255, 0.04);
+		color: var(--badge-text-hover);
+	}
+
+	#lovable-badge-cta:active {
+		transform: scale(0.98);
+	}
+
+	#lovable-badge-cta:focus {
+		outline: none;
+	}
+
+	#lovable-badge-cta:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: var(--focus-offset);
+		z-index: 1;
+	}
+
+	#lovable-badge-text {
+		line-height: 1;
+	}
+
+	#lovable-badge-divider {
+		width: 1px;
+		height: 24px;
+		background-color: rgba(255, 255, 255, 0.04);
+		flex-shrink: 0;
+	}
+
+	#lovable-badge-close {
+		width: 24px;
+		height: 24px;
+		min-width: 24px;
+		min-height: 24px;
+		cursor: pointer;
+		background: none;
+		border: none;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 0 var(--badge-radius) var(--badge-radius) 0;
+		flex-shrink: 0;
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-close:hover {
+		background: rgba(255, 255, 255, 0.04);
+	}
+
+	#lovable-badge-close:active {
+		transform: scale(0.92);
+	}
+
+	#lovable-badge-close:focus {
+		outline: none;
+	}
+
+	#lovable-badge-close:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: calc(var(--focus-offset) * -1);
+		z-index: 1;
+	}
+
+	#lovable-badge-close svg path {
+		fill: var(--badge-text);
+		transition: fill var(--badge-transition-duration) ease;
+	}
+
+	#lovable-badge-close:hover svg path {
+		fill: var(--badge-text-hover);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		#lovable-badge-cta,
+		#lovable-badge-close,
+		#lovable-badge-close svg path {
+			transition: none;
+		}
+		
+		#lovable-badge-cta:active,
+		#lovable-badge-close:active {
+			transform: none;
+		}
+	}
+
+	@media (prefers-contrast: high) {
+		#lovable-badge {
+			--badge-bg: #000;
+			--badge-text: #fff;
+			--badge-text-hover: #fff;
+			border: 2px solid currentColor;
+		}
+		
+		#lovable-badge-cta:focus-visible,
+		#lovable-badge-close:focus-visible {
+			outline-width: 3px;
+		}
+	}
+</style><style class="darkreader darkreader--sync" media="screen"></style>
+<script defer="defer" src="reference_files/~flock.js" data-proxy-url="/~api/analytics"></script><meta name="darkreader" content="e8bc778c7c3d49069b000409d1f92fce"><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
+    background-color: var(--darkreader-background-ffd76e, #684b00) !important;
+    border-color: var(--darkreader-background-c59d00, #9e7e00) !important;
+    color: var(--darkreader-text-302505, #d7d4cf) !important;
+}
+#vimvixen-console-frame {
+    color-scheme: light !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+#edge-translate-panel-body,
+.MuiTypography-body1,
+.nfe-quote-text {
+    color: var(--darkreader-neutral-text) !important;
+}
+gr-main-header {
+    background-color: var(--darkreader-background-add8e6, #1b4958) !important;
+}
+.tou-z65h9k,
+.tou-mignzq,
+.tou-1b6i2ox,
+.tou-lnqlqk {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.tou-75mvi {
+    background-color: var(--darkreader-background-cfecf5, #0f3a47) !important;
+}
+.tou-ta9e87,
+.tou-1w3fhi0,
+.tou-1b8t2us,
+.tou-py7lfi,
+.tou-1lpmd9d,
+.tou-1frrtv8,
+.tou-17ezmgn {
+    background-color: var(--darkreader-background-f5f5f5, #1e2021) !important;
+}
+.tou-uknfeu {
+    background-color: var(--darkreader-background-faedda, #432c09) !important;
+}
+.tou-6i3zyv {
+    background-color: var(--darkreader-background-85c3d8, #245d70) !important;
+}
+div.mermaid-viewer-control-panel .btn {
+    background-color: var(--darkreader-neutral-background);
+    fill: var(--darkreader-neutral-text);
+}
+svg g rect.er {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.entityBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxOdd {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxEven {
+    fill: var(--darkreader-selection-background);
+    fill-opacity: 0.8 !important;
+}
+svg rect.er.relationshipLabelBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g g.nodes rect,
+svg g g.nodes polygon {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.task {
+    fill: var(--darkreader-selection-background) !important;
+}
+svg line.messageLine0,
+svg line.messageLine1 {
+    stroke: var(--darkreader-neutral-text) !important;
+}
+div.mermaid .actor {
+    fill: var(--darkreader-neutral-background) !important;
+}
+mitid-authenticators-code-app > .code-app-container {
+    background-color: white !important;
+    padding-top: 1rem;
+}
+iframe#unpaywall[src$="unpaywall.html"] {
+    color-scheme: light !important;
+}
+select {
+    --darkreader-bg--form-control-background-color: rgba(22, 22, 22, 0) !important;
+}
+body#tumblr {
+    --darkreader-bg--secondary-accent: 31, 32, 34 !important;
+    --darkreader-bg--white: 23, 23, 23 !important;
+    --darkreader-text--black: 228, 224, 218 !important;
+}
+:host {
+    --d2l-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-button-icon-background-color-hover: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-color-ferrite: var(--darkreader-neutral-text) !important;
+    --d2l-color-sylvite: var(--darkreader-bg--d2l-color-sylvite) !important;
+    --d2l-dropdown-background-color: var(--darkreader-neutral-background) !important;
+    --d2l-dropdown-border-color: var(--darkreader-border--d2l-color-mica) !important;
+    --d2l-input-backgroud-color: var(--darkreader-neutral-background) !important;
+    --d2l-menu-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-tooltip-background-color: var(--darkreader-neutral-background) !important;
+    --d2l-tooltip-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+:host([_floating]) .d2l-floating-buttons-container {
+    background-color: var(--darkreader-neutral-background) !important;
+    border-top-color: var(--darkreader-border--d2l-color-mica) !important;
+    opacity: 0.88 !important;
+}
+d2l-card {
+    background: var(--darkreader-neutral-background) !important;
+    border-color: var(--darkreader-border--d2l-color-gypsum) !important;
+}
+d2l-dropdown-content > div,
+d2l-menu-item {
+    background-color: var(--darkreader-neutral-background) !important;
+    border-radius: 10px !important;
+}
+d2l-empty-state-simple {
+    border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-button-filter > ul > li > a.vui-button {
+    border-color: var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-label-text:has(.d2l-button-subtle-content):hover,
+.d2l-label-text:has(.d2l-button-subtle-content):focus,
+.d2l-label-text:has(.d2l-button-subtle-content):active {
+    background-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-navigation-centerer {
+    color: inherit !important;
+}
+.d2l-tabs-layout {
+    border-color: var(--darkreader-border--d2l-color-gypsum) !important;
+}
+.d2l-input,
+.d2l-calendar-date,
+.d2l-htmleditor-container {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.d2l-collapsible-panel {
+    border: 1px solid var(--darkreader-border--d2l-color-mica) !important;
+    border-radius: 0.4rem !important;
+}
+.d2l-collapsible-panel-divider {
+    border-bottom: 1px solid var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-w2d-flex {
+    border-bottom: 2px solid var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-collapsible-panel scrolled,
+.d2l-collapsible-panel-header,
+.d2l-w2d-collection-fixed {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.d2l-loading-spinner-bg {
+    fill: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-loading-spinner-bg-stroke {
+    stroke: var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-loading-spinner-wrapper svg path,
+.d2l-loading-spinner-wrapper svg circle {
+    fill: var(--darkreader-neutral-background) !important;
+}
+.d2l-twopanelselector-side.d2l-twopanelselector-side-sep {
+    background: var(--darkreader-bg--d2l-color-mica) !important;
+}
+.d2l-le-TreeAccordionItem-anchor::before {
+    background: var(--darkreader-bg--d2l-color-corundum) !important;
+}
+table[class|="moz-header"] {
+    background: none;
+}
+*[style*="color: rgba(0,0,0,"],
+*[style*="color: rgba(0, 0, 0,"],
+*[style*="color:#000"],
+*[style*="color:black"],
+*[style*="color:#282828"],
+*[style*="color:#444"] {
+    color: var(--darkreader-neutral-text) !important;
+}
+*[style*="background:#fff"],
+*[style*="background-color:#fff"] {
+    background: var(--darkreader-neutral-background) !important;
+}
+*[bgcolor="#F5F5F5"],
+*[style*="background-color: #F5F5F5"] {
+    background: var(--darkreader-background-f5f5f5, #1e2021) !important;
+}
+body[style*="background: rgb(255, 255, 255) !important"] *:not(a),
+.body[style*="background-color: rgb(254, 254, 254) !important"] *:not(a) {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+div[style*="www.gstatic.com/android/"] {
+    background: none !important;
+}
+*[style*="background:#f9f9f9"] {
+    background: var(--darkreader-background-f9f9f9, #1b1e1f) !important;
+}
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }</style><style type="text/css">:where(html[dir="ltr"]),:where([data-sonner-toaster][dir="ltr"]){--toast-icon-margin-start: -3px;--toast-icon-margin-end: 4px;--toast-svg-margin-start: -1px;--toast-svg-margin-end: 0px;--toast-button-margin-start: auto;--toast-button-margin-end: 0;--toast-close-button-start: 0;--toast-close-button-end: unset;--toast-close-button-transform: translate(-35%, -35%)}:where(html[dir="rtl"]),:where([data-sonner-toaster][dir="rtl"]){--toast-icon-margin-start: 4px;--toast-icon-margin-end: -3px;--toast-svg-margin-start: 0px;--toast-svg-margin-end: -1px;--toast-button-margin-start: 0;--toast-button-margin-end: auto;--toast-close-button-start: unset;--toast-close-button-end: 0;--toast-close-button-transform: translate(35%, -35%)}:where([data-sonner-toaster]){position:fixed;width:var(--width);font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;--gray1: hsl(0, 0%, 99%);--gray2: hsl(0, 0%, 97.3%);--gray3: hsl(0, 0%, 95.1%);--gray4: hsl(0, 0%, 93%);--gray5: hsl(0, 0%, 90.9%);--gray6: hsl(0, 0%, 88.7%);--gray7: hsl(0, 0%, 85.8%);--gray8: hsl(0, 0%, 78%);--gray9: hsl(0, 0%, 56.1%);--gray10: hsl(0, 0%, 52.3%);--gray11: hsl(0, 0%, 43.5%);--gray12: hsl(0, 0%, 9%);--border-radius: 8px;box-sizing:border-box;padding:0;margin:0;list-style:none;outline:none;z-index:999999999;transition:transform .4s ease}:where([data-sonner-toaster][data-lifted="true"]){transform:translateY(-10px)}@media (hover: none) and (pointer: coarse){:where([data-sonner-toaster][data-lifted="true"]){transform:none}}:where([data-sonner-toaster][data-x-position="right"]){right:var(--offset-right)}:where([data-sonner-toaster][data-x-position="left"]){left:var(--offset-left)}:where([data-sonner-toaster][data-x-position="center"]){left:50%;transform:translate(-50%)}:where([data-sonner-toaster][data-y-position="top"]){top:var(--offset-top)}:where([data-sonner-toaster][data-y-position="bottom"]){bottom:var(--offset-bottom)}:where([data-sonner-toast]){--y: translateY(100%);--lift-amount: calc(var(--lift) * var(--gap));z-index:var(--z-index);position:absolute;opacity:0;transform:var(--y);filter:blur(0);touch-action:none;transition:transform .4s,opacity .4s,height .4s,box-shadow .2s;box-sizing:border-box;outline:none;overflow-wrap:anywhere}:where([data-sonner-toast][data-styled="true"]){padding:16px;background:var(--normal-bg);border:1px solid var(--normal-border);color:var(--normal-text);border-radius:var(--border-radius);box-shadow:0 4px 12px #0000001a;width:var(--width);font-size:13px;display:flex;align-items:center;gap:6px}:where([data-sonner-toast]:focus-visible){box-shadow:0 4px 12px #0000001a,0 0 0 2px #0003}:where([data-sonner-toast][data-y-position="top"]){top:0;--y: translateY(-100%);--lift: 1;--lift-amount: calc(1 * var(--gap))}:where([data-sonner-toast][data-y-position="bottom"]){bottom:0;--y: translateY(100%);--lift: -1;--lift-amount: calc(var(--lift) * var(--gap))}:where([data-sonner-toast]) :where([data-description]){font-weight:400;line-height:1.4;color:inherit}:where([data-sonner-toast]) :where([data-title]){font-weight:500;line-height:1.5;color:inherit}:where([data-sonner-toast]) :where([data-icon]){display:flex;height:16px;width:16px;position:relative;justify-content:flex-start;align-items:center;flex-shrink:0;margin-left:var(--toast-icon-margin-start);margin-right:var(--toast-icon-margin-end)}:where([data-sonner-toast][data-promise="true"]) :where([data-icon])>svg{opacity:0;transform:scale(.8);transform-origin:center;animation:sonner-fade-in .3s ease forwards}:where([data-sonner-toast]) :where([data-icon])>*{flex-shrink:0}:where([data-sonner-toast]) :where([data-icon]) svg{margin-left:var(--toast-svg-margin-start);margin-right:var(--toast-svg-margin-end)}:where([data-sonner-toast]) :where([data-content]){display:flex;flex-direction:column;gap:2px}[data-sonner-toast][data-styled=true] [data-button]{border-radius:4px;padding-left:8px;padding-right:8px;height:24px;font-size:12px;color:var(--normal-bg);background:var(--normal-text);margin-left:var(--toast-button-margin-start);margin-right:var(--toast-button-margin-end);border:none;cursor:pointer;outline:none;display:flex;align-items:center;flex-shrink:0;transition:opacity .4s,box-shadow .2s}:where([data-sonner-toast]) :where([data-button]):focus-visible{box-shadow:0 0 0 2px #0006}:where([data-sonner-toast]) :where([data-button]):first-of-type{margin-left:var(--toast-button-margin-start);margin-right:var(--toast-button-margin-end)}:where([data-sonner-toast]) :where([data-cancel]){color:var(--normal-text);background:rgba(0,0,0,.08)}:where([data-sonner-toast][data-theme="dark"]) :where([data-cancel]){background:rgba(255,255,255,.3)}:where([data-sonner-toast]) :where([data-close-button]){position:absolute;left:var(--toast-close-button-start);right:var(--toast-close-button-end);top:0;height:20px;width:20px;display:flex;justify-content:center;align-items:center;padding:0;color:var(--gray12);border:1px solid var(--gray4);transform:var(--toast-close-button-transform);border-radius:50%;cursor:pointer;z-index:1;transition:opacity .1s,background .2s,border-color .2s}[data-sonner-toast] [data-close-button]{background:var(--gray1)}:where([data-sonner-toast]) :where([data-close-button]):focus-visible{box-shadow:0 4px 12px #0000001a,0 0 0 2px #0003}:where([data-sonner-toast]) :where([data-disabled="true"]){cursor:not-allowed}:where([data-sonner-toast]):hover :where([data-close-button]):hover{background:var(--gray2);border-color:var(--gray5)}:where([data-sonner-toast][data-swiping="true"]):before{content:"";position:absolute;left:-50%;right:-50%;height:100%;z-index:-1}:where([data-sonner-toast][data-y-position="top"][data-swiping="true"]):before{bottom:50%;transform:scaleY(3) translateY(50%)}:where([data-sonner-toast][data-y-position="bottom"][data-swiping="true"]):before{top:50%;transform:scaleY(3) translateY(-50%)}:where([data-sonner-toast][data-swiping="false"][data-removed="true"]):before{content:"";position:absolute;inset:0;transform:scaleY(2)}:where([data-sonner-toast]):after{content:"";position:absolute;left:0;height:calc(var(--gap) + 1px);bottom:100%;width:100%}:where([data-sonner-toast][data-mounted="true"]){--y: translateY(0);opacity:1}:where([data-sonner-toast][data-expanded="false"][data-front="false"]){--scale: var(--toasts-before) * .05 + 1;--y: translateY(calc(var(--lift-amount) * var(--toasts-before))) scale(calc(-1 * var(--scale)));height:var(--front-toast-height)}:where([data-sonner-toast])>*{transition:opacity .4s}:where([data-sonner-toast][data-expanded="false"][data-front="false"][data-styled="true"])>*{opacity:0}:where([data-sonner-toast][data-visible="false"]){opacity:0;pointer-events:none}:where([data-sonner-toast][data-mounted="true"][data-expanded="true"]){--y: translateY(calc(var(--lift) * var(--offset)));height:var(--initial-height)}:where([data-sonner-toast][data-removed="true"][data-front="true"][data-swipe-out="false"]){--y: translateY(calc(var(--lift) * -100%));opacity:0}:where([data-sonner-toast][data-removed="true"][data-front="false"][data-swipe-out="false"][data-expanded="true"]){--y: translateY(calc(var(--lift) * var(--offset) + var(--lift) * -100%));opacity:0}:where([data-sonner-toast][data-removed="true"][data-front="false"][data-swipe-out="false"][data-expanded="false"]){--y: translateY(40%);opacity:0;transition:transform .5s,opacity .2s}:where([data-sonner-toast][data-removed="true"][data-front="false"]):before{height:calc(var(--initial-height) + 20%)}[data-sonner-toast][data-swiping=true]{transform:var(--y) translateY(var(--swipe-amount-y, 0px)) translate(var(--swipe-amount-x, 0px));transition:none}[data-sonner-toast][data-swiped=true]{user-select:none}[data-sonner-toast][data-swipe-out=true][data-y-position=bottom],[data-sonner-toast][data-swipe-out=true][data-y-position=top]{animation-duration:.2s;animation-timing-function:ease-out;animation-fill-mode:forwards}[data-sonner-toast][data-swipe-out=true][data-swipe-direction=left]{animation-name:swipe-out-left}[data-sonner-toast][data-swipe-out=true][data-swipe-direction=right]{animation-name:swipe-out-right}[data-sonner-toast][data-swipe-out=true][data-swipe-direction=up]{animation-name:swipe-out-up}[data-sonner-toast][data-swipe-out=true][data-swipe-direction=down]{animation-name:swipe-out-down}@keyframes swipe-out-left{0%{transform:var(--y) translate(var(--swipe-amount-x));opacity:1}to{transform:var(--y) translate(calc(var(--swipe-amount-x) - 100%));opacity:0}}@keyframes swipe-out-right{0%{transform:var(--y) translate(var(--swipe-amount-x));opacity:1}to{transform:var(--y) translate(calc(var(--swipe-amount-x) + 100%));opacity:0}}@keyframes swipe-out-up{0%{transform:var(--y) translateY(var(--swipe-amount-y));opacity:1}to{transform:var(--y) translateY(calc(var(--swipe-amount-y) - 100%));opacity:0}}@keyframes swipe-out-down{0%{transform:var(--y) translateY(var(--swipe-amount-y));opacity:1}to{transform:var(--y) translateY(calc(var(--swipe-amount-y) + 100%));opacity:0}}@media (max-width: 600px){[data-sonner-toaster]{position:fixed;right:var(--mobile-offset-right);left:var(--mobile-offset-left);width:100%}[data-sonner-toaster][dir=rtl]{left:calc(var(--mobile-offset-left) * -1)}[data-sonner-toaster] [data-sonner-toast]{left:0;right:0;width:calc(100% - var(--mobile-offset-left) * 2)}[data-sonner-toaster][data-x-position=left]{left:var(--mobile-offset-left)}[data-sonner-toaster][data-y-position=bottom]{bottom:var(--mobile-offset-bottom)}[data-sonner-toaster][data-y-position=top]{top:var(--mobile-offset-top)}[data-sonner-toaster][data-x-position=center]{left:var(--mobile-offset-left);right:var(--mobile-offset-right);transform:none}}[data-sonner-toaster][data-theme=light]{--normal-bg: #fff;--normal-border: var(--gray4);--normal-text: var(--gray12);--success-bg: hsl(143, 85%, 96%);--success-border: hsl(145, 92%, 91%);--success-text: hsl(140, 100%, 27%);--info-bg: hsl(208, 100%, 97%);--info-border: hsl(221, 91%, 91%);--info-text: hsl(210, 92%, 45%);--warning-bg: hsl(49, 100%, 97%);--warning-border: hsl(49, 91%, 91%);--warning-text: hsl(31, 92%, 45%);--error-bg: hsl(359, 100%, 97%);--error-border: hsl(359, 100%, 94%);--error-text: hsl(360, 100%, 45%)}[data-sonner-toaster][data-theme=light] [data-sonner-toast][data-invert=true]{--normal-bg: #000;--normal-border: hsl(0, 0%, 20%);--normal-text: var(--gray1)}[data-sonner-toaster][data-theme=dark] [data-sonner-toast][data-invert=true]{--normal-bg: #fff;--normal-border: var(--gray3);--normal-text: var(--gray12)}[data-sonner-toaster][data-theme=dark]{--normal-bg: #000;--normal-bg-hover: hsl(0, 0%, 12%);--normal-border: hsl(0, 0%, 20%);--normal-border-hover: hsl(0, 0%, 25%);--normal-text: var(--gray1);--success-bg: hsl(150, 100%, 6%);--success-border: hsl(147, 100%, 12%);--success-text: hsl(150, 86%, 65%);--info-bg: hsl(215, 100%, 6%);--info-border: hsl(223, 100%, 12%);--info-text: hsl(216, 87%, 65%);--warning-bg: hsl(64, 100%, 6%);--warning-border: hsl(60, 100%, 12%);--warning-text: hsl(46, 87%, 65%);--error-bg: hsl(358, 76%, 10%);--error-border: hsl(357, 89%, 16%);--error-text: hsl(358, 100%, 81%)}[data-sonner-toaster][data-theme=dark] [data-sonner-toast] [data-close-button]{background:var(--normal-bg);border-color:var(--normal-border);color:var(--normal-text)}[data-sonner-toaster][data-theme=dark] [data-sonner-toast] [data-close-button]:hover{background:var(--normal-bg-hover);border-color:var(--normal-border-hover)}[data-rich-colors=true][data-sonner-toast][data-type=success],[data-rich-colors=true][data-sonner-toast][data-type=success] [data-close-button]{background:var(--success-bg);border-color:var(--success-border);color:var(--success-text)}[data-rich-colors=true][data-sonner-toast][data-type=info],[data-rich-colors=true][data-sonner-toast][data-type=info] [data-close-button]{background:var(--info-bg);border-color:var(--info-border);color:var(--info-text)}[data-rich-colors=true][data-sonner-toast][data-type=warning],[data-rich-colors=true][data-sonner-toast][data-type=warning] [data-close-button]{background:var(--warning-bg);border-color:var(--warning-border);color:var(--warning-text)}[data-rich-colors=true][data-sonner-toast][data-type=error],[data-rich-colors=true][data-sonner-toast][data-type=error] [data-close-button]{background:var(--error-bg);border-color:var(--error-border);color:var(--error-text)}.sonner-loading-wrapper{--size: 16px;height:var(--size);width:var(--size);position:absolute;inset:0;z-index:10}.sonner-loading-wrapper[data-visible=false]{transform-origin:center;animation:sonner-fade-out .2s ease forwards}.sonner-spinner{position:relative;top:50%;left:50%;height:var(--size);width:var(--size)}.sonner-loading-bar{animation:sonner-spin 1.2s linear infinite;background:var(--gray11);border-radius:6px;height:8%;left:-10%;position:absolute;top:-3.9%;width:24%}.sonner-loading-bar:nth-child(1){animation-delay:-1.2s;transform:rotate(.0001deg) translate(146%)}.sonner-loading-bar:nth-child(2){animation-delay:-1.1s;transform:rotate(30deg) translate(146%)}.sonner-loading-bar:nth-child(3){animation-delay:-1s;transform:rotate(60deg) translate(146%)}.sonner-loading-bar:nth-child(4){animation-delay:-.9s;transform:rotate(90deg) translate(146%)}.sonner-loading-bar:nth-child(5){animation-delay:-.8s;transform:rotate(120deg) translate(146%)}.sonner-loading-bar:nth-child(6){animation-delay:-.7s;transform:rotate(150deg) translate(146%)}.sonner-loading-bar:nth-child(7){animation-delay:-.6s;transform:rotate(180deg) translate(146%)}.sonner-loading-bar:nth-child(8){animation-delay:-.5s;transform:rotate(210deg) translate(146%)}.sonner-loading-bar:nth-child(9){animation-delay:-.4s;transform:rotate(240deg) translate(146%)}.sonner-loading-bar:nth-child(10){animation-delay:-.3s;transform:rotate(270deg) translate(146%)}.sonner-loading-bar:nth-child(11){animation-delay:-.2s;transform:rotate(300deg) translate(146%)}.sonner-loading-bar:nth-child(12){animation-delay:-.1s;transform:rotate(330deg) translate(146%)}@keyframes sonner-fade-in{0%{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}@keyframes sonner-fade-out{0%{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(.8)}}@keyframes sonner-spin{0%{opacity:1}to{opacity:.15}}@media (prefers-reduced-motion){[data-sonner-toast],[data-sonner-toast]>*,.sonner-loading-bar{transition:none!important;animation:none!important}}.sonner-loader{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);transform-origin:center;transition:opacity .2s,transform .2s}.sonner-loader[data-visible=false]{opacity:0;transform:scale(.8) translate(-50%,-50%)}
+</style><style class="darkreader darkreader--sync" media="screen"></style><style class="automa-element-selector">@font-face { font-family: "Inter var"; font-weight: 100 900; font-display: swap; font-style: normal; font-named-instance: "Regular"; src: url("moz-extension://9fbe7964-2705-4545-a84d-232379d89ff2/Inter-roman-latin.var.woff2") format("woff2") }
+.automa-element-selector { direction: ltr } 
+ [automa-isDragging] { user-select: none } 
+ [automa-el-list] {outline: 2px dashed #6366f1;}</style></head>
+
+  <body>
+    <div id="root"><div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none;"><ol tabindex="-1" class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]"></ol></div><section aria-label="Notifications alt+T" tabindex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false"></section><div class="min-h-screen bg-background"><nav class="fixed top-0 z-50 w-full border-b border-border bg-background/90 backdrop-blur-md"><div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 md:px-8"><div class="flex items-center gap-3"><img src="reference_files/logo-mini-CuayUjMH.jpg" alt="Asterope" class="h-10 w-10 rounded-md object-cover"><span class="font-semibold text-sm tracking-tight text-primary">ASTEROPE</span></div><div class="hidden space-x-10 font-mono text-[10px] font-medium uppercase tracking-[0.2em] md:flex"><a href="#methodology" class="text-muted-foreground hover:text-primary transition-colors">Metodología</a><a href="#solutions" class="text-muted-foreground hover:text-primary transition-colors">Soluciones</a><a href="#packages" class="text-muted-foreground hover:text-primary transition-colors">Paquetes</a><a href="#contact" class="text-accent font-semibold">Contacto</a></div></div></nav><main class="pt-20"><section class="relative border-b border-border py-28 md:py-44 overflow-hidden"><img src="reference_files/pleiades-nebula-CIC8_XdM.jpg" alt="" aria-hidden="true" class="pointer-events-none select-none absolute -top-32 -right-32 md:-top-40 md:-right-40 w-[480px] md:w-[680px] lg:w-[820px] h-auto opacity-30 md:opacity-35 mix-blend-multiply" style="mask-image: radial-gradient(circle, black 28%, transparent 68%);"><div class="relative mx-auto max-w-7xl px-6 md:px-8"><div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center"><div class="max-w-[550px]"><p class="mb-6 font-mono text-xs font-medium uppercase tracking-[0.3em] text-accent">Claridad · Alineación · Rendimiento Estelar</p><h1 class="text-balance text-4xl font-light tracking-tight leading-[1.1] md:text-6xl lg:text-7xl text-primary">Ecosistema de <span class="font-semibold">Negocios</span> y Operaciones</h1><p class="mt-8 max-w-[45ch] text-base md:text-lg leading-relaxed text-muted-foreground">Apoyamos
+ PYMEs, corporaciones y operaciones en industrias reguladas a través de 
+consultoría, herramientas y apoyo práctico, orientados a la 
+implementación de sistemas sostenibles que respalden el crecimiento y la
+ estabilidad a largo plazo.</p><div class="mt-10 flex flex-col sm:flex-row gap-4"><a href="#contact" class="w-fit bg-primary px-8 py-4 font-mono text-xs font-medium uppercase tracking-widest text-primary-foreground transition-all hover:bg-navy-light rounded-md">Comenzar</a><a href="#solutions" class="w-fit border border-border px-8 py-4 font-mono text-xs font-medium uppercase tracking-widest text-primary transition-all hover:bg-secondary rounded-md">Nuestras Soluciones</a></div></div><div class="hidden md:flex justify-center"><img src="reference_files/logo-full-BxHQzscm.jpeg" alt="Asterope Consulting LLC" class="w-96 lg:w-[28rem] aspect-square object-cover rounded-full drop-shadow-lg" style="mask-image: radial-gradient(circle, black 50%, transparent 78%);"></div></div></div></section><section id="solutions" class="border-b border-border bg-secondary/50 py-20"><div class="mx-auto max-w-7xl px-6 md:px-8"><div class="mb-12"><p class="font-mono text-xs font-medium uppercase tracking-[0.3em] text-accent mb-3">Lo Que Hacemos</p><h2 class="text-3xl md:text-4xl font-light tracking-tight text-primary">Productos por <span class="font-semibold">Línea de Servicio</span></h2></div><div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-border rounded-lg overflow-hidden border border-border"><div class="group relative p-8 md:p-10 transition-all bg-background hover:bg-card cursor-pointer"><span class="mb-6 block font-mono text-[10px] text-steel">01 / PRODUCTOS DIGITALES</span><h3 class="mb-4 text-xl font-semibold tracking-tight text-primary">Productos Digitales</h3><p class="mb-8 text-muted-foreground leading-relaxed text-sm">Una
+ biblioteca de plantillas y herramientas empresariales listas para usar,
+ diseñadas para agilizar la documentación y fortalecer la gobernanza del
+ negocio. Opciones personalizadas disponibles.</p><div class="overflow-hidden transition-all duration-500 max-h-0 opacity-0"><ul class="space-y-3 font-mono text-[11px] uppercase tracking-wider text-accent pb-6"><li>✦ Plan de Negocios</li><li>✦ Presentación de Revisión de Negocio</li><li>✦ Pronóstico de Capacidad</li><li>✦ Plan de Acción Correctiva</li><li>✦ Plan de Desarrollo</li><li>✦ Ledger Financiero</li><li>✦ Control de Inventario</li><li>✦ Descripción de Puesto</li><li>✦ Tablero de KPIs</li><li>✦ Manual Operativo</li><li>✦ Planes de Precios</li><li>✦ eMenus</li><li>✦ Acuerdo Operativo + Borradores de Resoluciones Clave + Ledger de Miembros</li><li>✦ Plan de Mejora del Desempeño</li><li>✦ Playbook</li><li>✦ Política Interna</li><li>✦ Tarjeta de Evaluación</li><li>✦ Scorecard</li><li>✦ Procedimiento Operativo Estándar (SOP)</li><li>✦ Glidepath de Capacitación</li><li>✦ &amp; más</li></ul></div><div class="size-8 border rounded-md flex items-center justify-center transition-all border-border text-muted-foreground group-hover:border-accent group-hover:text-accent"><span class="text-lg leading-none">+</span></div></div><div class="group relative p-8 md:p-10 transition-all bg-background hover:bg-card cursor-pointer"><span class="mb-6 block font-mono text-[10px] text-steel">02 / MARKETING &amp; ADVERTISEMENT</span><h3 class="mb-4 text-xl font-semibold tracking-tight text-primary">Marketing &amp; Advertisement</h3><p class="mb-8 text-muted-foreground leading-relaxed text-sm">Diseñamos
+ soluciones de marca integrales y producción creativa de alto impacto, 
+combinando tecnología y producción tradicional con claridad, 
+consistencia y escala.</p><div class="overflow-hidden transition-all duration-500 max-h-0 opacity-0"><ul class="space-y-3 font-mono text-[11px] uppercase tracking-wider text-accent pb-6"><li>✦ Gestión de Campañas Publicitarias</li><li>✦ Producción Audiovisual (AVP)</li><li>✦ Estrategia de Marca + Identidad Visual + Branding Gudelines</li><li>✦ Diseño Gráfico</li><li>✦ Fotografía Profesional</li><li>✦ Diseño de Sitios Web</li><li>✦ &amp; más</li></ul></div><div class="size-8 border rounded-md flex items-center justify-center transition-all border-border text-muted-foreground group-hover:border-accent group-hover:text-accent"><span class="text-lg leading-none">+</span></div></div><div class="group relative p-8 md:p-10 transition-all bg-background hover:bg-card cursor-pointer"><span class="mb-6 block font-mono text-[10px] text-steel">03 / APOYO EMPRESARIAL &amp; OPERATIVO</span><h3 class="mb-4 text-xl font-semibold tracking-tight text-primary">Apoyo Empresarial &amp; Operativo</h3><p class="mb-8 text-muted-foreground leading-relaxed text-sm">Brindamos <strong class="font-semibold text-primary">consultoría y acompañamiento estratégico</strong>, <strong class="font-semibold text-primary">ejecución por proyectos</strong> y <strong class="font-semibold text-primary">liderazgo fraccional</strong> para fortalecer operaciones y construir sistemas sostenibles con claridad y consistencia.</p><div class="overflow-hidden transition-all duration-500 max-h-0 opacity-0"><ul class="space-y-3 font-mono text-[11px] uppercase tracking-wider text-accent pb-6"><li>✦ Sesión de Desarrollo de Liderazgo 1:1</li><li>✦ Asterope Sistema Operativo (AOS) – Potenciado por MS 365</li><li>✦ Soporte para Preparación de Auditorías (Farmacia y Salud)</li><li>✦ Servicios de Incorporación de Empresas</li><li>✦ Consultoría</li><li>✦ Personalizado – Plan de Negocios</li><li>✦ Personalizado – Presentación de Revisión de Negocio</li><li>✦ Personalizado – Pronóstico de Capacidad</li><li>✦ Personalizado – Plan de Acción Correctiva</li><li>✦ Personalizado – Plan de Desarrollo</li><li>✦ Personalizado – Ledger Financiero</li><li>✦ Personalizado – Control de Inventario</li><li>✦ Personalizado – Descripción de Puesto</li><li>✦ Personalizado – Tablero de KPIs</li><li>✦ Personalizado – Manual Operativo</li><li>✦ Personalizado – Acuerdo Operativo + Borradores de Resoluciones Clave + Ledger de Miembros</li><li>✦ Personalizado – Plan de Mejora del Desempeño</li><li>✦ Personalizado – Playbook</li><li>✦ Personalizado – Política</li><li>✦ Personalizado – Tarjeta de Evaluación</li><li>✦ Personalizado – Scorecard</li><li>✦ Personalizado – Procedimiento Operativo Estándar (SOP)</li><li>✦ Personalizado – Ruta de Capacitación</li><li>✦ Revisión de Arquitectura de Documentación</li><li>✦ Diseño de Intranet</li><li>✦ Taller de Desarrollo de Liderazgo</li><li>✦ Marco de Medición del Desempeño</li><li>✦ Referencias para Servicios Profesional</li><li>✦ Marco de Monitoreo de Calidad</li><li>✦ Diagnóstico y Plan de Remediación de Alto Nivel</li><li>✦ Auditoría del Ciclo de Ingresos (Sector Salud)</li><li>✦ Análisis de Causa Raíz + Plan de Remediación Integral</li><li>✦ Planificación de Sucesión</li><li>✦ Desarrollo de Contenido de Capacitación</li><li>✦ Marco de Capacitación</li><li>✦ Diseño de Sitio Web + Tarifa Anual de Hosting</li><li>✦ Membresía Annual</li><li>✦ &amp; más</li></ul></div><div class="size-8 border rounded-md flex items-center justify-center transition-all border-border text-muted-foreground group-hover:border-accent group-hover:text-accent"><span class="text-lg leading-none">+</span></div></div></div></div></section><section id="packages" class="relative overflow-hidden border-b border-border bg-background py-20 md:py-24"><div aria-hidden="true" class="pointer-events-none absolute inset-0 opacity-[0.55]" style="background-image: radial-gradient(1.5px 1.5px at 12% 18%, hsl(var(--navy) / 0.55) 50%, transparent 51%),
+            radial-gradient(1px 1px at 22% 42%, hsl(var(--sky) / 0.5) 50%, transparent 51%),
+            radial-gradient(1.2px 1.2px at 8% 72%, hsl(var(--steel) / 0.45) 50%, transparent 51%),
+            radial-gradient(1px 1px at 32% 88%, hsl(var(--navy) / 0.4) 50%, transparent 51%),
+            radial-gradient(1.8px 1.8px at 48% 14%, hsl(var(--sky) / 0.55) 50%, transparent 51%),
+            radial-gradient(1px 1px at 58% 36%, hsl(var(--steel) / 0.4) 50%, transparent 51%),
+            radial-gradient(1.3px 1.3px at 68% 62%, hsl(var(--navy) / 0.5) 50%, transparent 51%),
+            radial-gradient(1px 1px at 52% 80%, hsl(var(--sky) / 0.4) 50%, transparent 51%),
+            radial-gradient(1.6px 1.6px at 82% 22%, hsl(var(--navy) / 0.55) 50%, transparent 51%),
+            radial-gradient(1px 1px at 92% 48%, hsl(var(--steel) / 0.45) 50%, transparent 51%),
+            radial-gradient(1.2px 1.2px at 76% 84%, hsl(var(--sky) / 0.5) 50%, transparent 51%),
+            radial-gradient(1px 1px at 96% 76%, hsl(var(--navy) / 0.4) 50%, transparent 51%); background-size: 100% 100%; --darkreader-inline-bgimage: radial-gradient(1.5px 1.5px at 12% 18%, hsl(var(--darkreader-bg--navy) / 0.55) 50%, transparent 51%),
+            radial-gradient(1px 1px at 22% 42%, hsl(var(--darkreader-bg--sky) / 0.5) 50%, transparent 51%),
+            radial-gradient(1.2px 1.2px at 8% 72%, hsl(var(--steel) / 0.45) 50%, transparent 51%),
+            radial-gradient(1px 1px at 32% 88%, hsl(var(--darkreader-bg--navy) / 0.4) 50%, transparent 51%),
+            radial-gradient(1.8px 1.8px at 48% 14%, hsl(var(--darkreader-bg--sky) / 0.55) 50%, transparent 51%),
+            radial-gradient(1px 1px at 58% 36%, hsl(var(--steel) / 0.4) 50%, transparent 51%),
+            radial-gradient(1.3px 1.3px at 68% 62%, hsl(var(--darkreader-bg--navy) / 0.5) 50%, transparent 51%),
+            radial-gradient(1px 1px at 52% 80%, hsl(var(--darkreader-bg--sky) / 0.4) 50%, transparent 51%),
+            radial-gradient(1.6px 1.6px at 82% 22%, hsl(var(--darkreader-bg--navy) / 0.55) 50%, transparent 51%),
+            radial-gradient(1px 1px at 92% 48%, hsl(var(--steel) / 0.45) 50%, transparent 51%),
+            radial-gradient(1.2px 1.2px at 76% 84%, hsl(var(--darkreader-bg--sky) / 0.5) 50%, transparent 51%),
+            radial-gradient(1px 1px at 96% 76%, hsl(var(--darkreader-bg--navy) / 0.4) 50%, transparent 51%);" data-darkreader-inline-bgimage=""></div><svg aria-hidden="true" class="pointer-events-none absolute right-10 top-10 h-40 w-64 opacity-20" viewBox="0 0 256 160" fill="none"><line x1="20" y1="40" x2="80" y2="20" stroke="hsl(var(--navy))" stroke-width="0.5" style="--darkreader-inline-stroke: var(--darkreader-border-000000, #8c8273);" data-darkreader-inline-stroke=""></line><line x1="80" y1="20" x2="140" y2="60" stroke="hsl(var(--navy))" stroke-width="0.5" style="--darkreader-inline-stroke: var(--darkreader-border-000000, #8c8273);" data-darkreader-inline-stroke=""></line><line x1="140" y1="60" x2="200" y2="40" stroke="hsl(var(--navy))" stroke-width="0.5" style="--darkreader-inline-stroke: var(--darkreader-border-000000, #8c8273);" data-darkreader-inline-stroke=""></line><line x1="140" y1="60" x2="180" y2="120" stroke="hsl(var(--navy))" stroke-width="0.5" style="--darkreader-inline-stroke: var(--darkreader-border-000000, #8c8273);" data-darkreader-inline-stroke=""></line><circle cx="20" cy="40" r="2" fill="hsl(var(--sky))" style="--darkreader-inline-fill: var(--darkreader-text-000000, #e8e6e3);" data-darkreader-inline-fill=""></circle><circle cx="80" cy="20" r="2.5" fill="hsl(var(--navy))" style="--darkreader-inline-fill: var(--darkreader-text-000000, #e8e6e3);" data-darkreader-inline-fill=""></circle><circle cx="140" cy="60" r="3" fill="hsl(var(--sky))" style="--darkreader-inline-fill: var(--darkreader-text-000000, #e8e6e3);" data-darkreader-inline-fill=""></circle><circle cx="200" cy="40" r="2" fill="hsl(var(--navy))" style="--darkreader-inline-fill: var(--darkreader-text-000000, #e8e6e3);" data-darkreader-inline-fill=""></circle><circle cx="180" cy="120" r="2.5" fill="hsl(var(--sky))" style="--darkreader-inline-fill: var(--darkreader-text-000000, #e8e6e3);" data-darkreader-inline-fill=""></circle></svg><svg aria-hidden="true" class="pointer-events-none absolute bottom-16 left-8 h-36 w-56 opacity-15" viewBox="0 0 224 144" fill="none"><line x1="20" y1="100" x2="70" y2="60" stroke="hsl(var(--navy))" stroke-width="0.5" style="--darkreader-inline-stroke: var(--darkreader-border-000000, #8c8273);" data-darkreader-inline-stroke=""></line><line x1="70" y1="60" x2="130" y2="80" stroke="hsl(var(--navy))" stroke-width="0.5" style="--darkreader-inline-stroke: var(--darkreader-border-000000, #8c8273);" data-darkreader-inline-stroke=""></line><line x1="130" y1="80" x2="190" y2="40" stroke="hsl(var(--navy))" stroke-width="0.5" style="--darkreader-inline-stroke: var(--darkreader-border-000000, #8c8273);" data-darkreader-inline-stroke=""></line><circle cx="20" cy="100" r="2" fill="hsl(var(--navy))" style="--darkreader-inline-fill: var(--darkreader-text-000000, #e8e6e3);" data-darkreader-inline-fill=""></circle><circle cx="70" cy="60" r="2.5" fill="hsl(var(--sky))" style="--darkreader-inline-fill: var(--darkreader-text-000000, #e8e6e3);" data-darkreader-inline-fill=""></circle><circle cx="130" cy="80" r="2" fill="hsl(var(--navy))" style="--darkreader-inline-fill: var(--darkreader-text-000000, #e8e6e3);" data-darkreader-inline-fill=""></circle><circle cx="190" cy="40" r="2.5" fill="hsl(var(--sky))" style="--darkreader-inline-fill: var(--darkreader-text-000000, #e8e6e3);" data-darkreader-inline-fill=""></circle></svg><div class="relative mx-auto max-w-7xl px-6 md:px-8"><div class="mb-12"><p class="mb-3 font-mono text-xs font-medium uppercase tracking-[0.3em] text-accent">✦ Paquetes de Servicio</p><h2 class="text-3xl font-light tracking-tight text-primary md:text-4xl">Paquetes de <span class="font-semibold">Servicio</span></h2><p class="mt-4 max-w-2xl leading-relaxed text-muted-foreground">Soluciones
+ modulares diseñadas para abordar los retos más críticos de su 
+organización, flexibles según el contexto y sus necesidades.</p></div><div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"><article class="group relative rounded-lg border bg-card p-8 transition-all hover:shadow-lg border-border hover:border-accent "><div class="mb-6 flex items-start justify-between gap-4"><span class="font-mono text-[10px] uppercase tracking-widest text-steel">01 / Paquete</span><span class="font-mono text-[10px] uppercase tracking-widest text-accent">ASTEROPE MULTIVERSO</span></div><h3 class="mb-4 text-lg font-semibold tracking-tight text-primary transition-colors group-hover:text-accent">Formación de Empresas</h3><p class="text-sm leading-relaxed text-muted-foreground">Solución
+ integral para la formación y puesta en marcha de empresas, que articula
+ estrategia, incorporación legal, estructura organizacional e 
+implementación operativa, estableciendo una base sólida, gobernable y 
+escalable para el crecimiento sostenible del negocio.</p><div class="overflow-hidden transition-all duration-500 max-h-0 opacity-0"><ul class="space-y-2 font-mono text-[11px] uppercase tracking-wider text-accent"><li>✦ Consultoría</li><li>✦ Diagnóstico y Plan de Remediación de Alto Nivel</li><li>✦ Servicios de Incorporación de Empresas</li><li>✦ Personalizado – Acuerdo Operativo + Borradores de Resoluciones Clave + Ledger de Miembros</li><li>✦ Personalizado – Plan de Negocios</li><li>✦ Personalizado – Ledger Financiero</li><li>✦ Estrategia de Marca + Identidad Visual + Branding Guidelines</li><li>✦ Diseño de Sitio Web + Tarifa Anual de Hosting</li><li>✦ Asterope Sistema Operativo (AOS) – Potenciado por MS 365</li><li>✦ Revisión de Arquitectura de Documentación</li><li>✦ Diseño de Intranet</li><li>✦ Personalizado – Procedimiento Operativo Estándar (SOP)</li><li>✦ Personalizado – Política Interna</li><li>✦ Personalizado – Descripción de Puesto</li><li>✦ Marco de Medición del Desempeño</li><li>✦ Marco de Monitoreo de Calidad</li><li>✦ Personalizado – Scorecard</li><li>✦ Sesión de Desarrollo de Liderazgo 1:1</li><li>✦ Binder Corporativo</li><li>✦ Sello Corporativo</li><li>✦ Referidos para Servicios Profesional</li></ul></div><button type="button" class="mt-6 flex w-full cursor-pointer items-center justify-between border-t border-border pt-4 text-left"><span class="font-mono text-[10px] uppercase tracking-widest transition-colors text-muted-foreground group-hover:text-accent">Más Información</span><span class="text-sm text-accent transition-transform ">→</span></button></article><article class="group relative rounded-lg border bg-card p-8 transition-all hover:shadow-lg border-border hover:border-accent "><div class="mb-6 flex items-start justify-between gap-4"><span class="font-mono text-[10px] uppercase tracking-widest text-steel">02 / Paquete</span><span class="font-mono text-[10px] uppercase tracking-widest text-accent">ASTEROPE UNIVERSO</span></div><h3 class="mb-4 text-lg font-semibold tracking-tight text-primary transition-colors group-hover:text-accent">Membresía Anual</h3><p class="text-sm leading-relaxed text-muted-foreground">Relación
+ anual de acompañamiento estratégico y soporte operativo, que combina 
+acceso continuo a consultoría, ejecución de proyectos alineados a las 
+prioridades del negocio y mantenimiento de la presencia digital, 
+asegurando continuidad, flexibilidad y apoyo estructurado para una 
+evolución sostenida de la empresa.</p><div class="overflow-hidden transition-all duration-500 max-h-0 opacity-0"><ul class="space-y-2 font-mono text-[11px] uppercase tracking-wider text-accent"><li>✦ Hasta 80 Horas de Consultoría en el Año</li><li>✦ 2 Servicios Basados en Proyectos</li><li>✦ Diseño de Sitio Web + Tarifa Anual de Web Hosting (membresía inicial)</li><li>✦ Tarifa Anual de Web Hosting Annual (membresías renovadas)</li></ul></div><button type="button" class="mt-6 flex w-full cursor-pointer items-center justify-between border-t border-border pt-4 text-left"><span class="font-mono text-[10px] uppercase tracking-widest transition-colors text-muted-foreground group-hover:text-accent">Más Información</span><span class="text-sm text-accent transition-transform ">→</span></button></article><article class="group relative rounded-lg border bg-card p-8 transition-all hover:shadow-lg border-border hover:border-accent "><div class="mb-6 flex items-start justify-between gap-4"><span class="font-mono text-[10px] uppercase tracking-widest text-steel">03 / Paquete</span><span class="font-mono text-[10px] uppercase tracking-widest text-accent">ASTEROPE GALAXIA</span></div><h3 class="mb-4 text-lg font-semibold tracking-tight text-primary transition-colors group-hover:text-accent">Crecimiento Empresarial</h3><p class="text-sm leading-relaxed text-muted-foreground">Orientado
+ a impulsar el crecimiento estratégico y sostenible de la empresa, 
+integrando diagnóstico, planificación, capacidad operativa y alineación 
+de procesos, con enfoque en control, gobierno y visibilidad ejecutiva 
+para una toma de decisiones informada y futura.</p><div class="overflow-hidden transition-all duration-500 max-h-0 opacity-0"><ul class="space-y-2 font-mono text-[11px] uppercase tracking-wider text-accent"><li>✦ Diagnóstico y Plan de Remediación de Alto Nivel</li><li>✦ Plan de Crecimiento de Negocio</li><li>✦ Personalizado – Pronóstico de Capacidad</li><li>✦ Personalizado – Control de Inventario</li><li>✦ Personalizado – Presentación de Revisión de Negocio</li><li>✦ Planificación de Sucesión</li><li>✦ Referidos para Servicios Profesional</li></ul></div><button type="button" class="mt-6 flex w-full cursor-pointer items-center justify-between border-t border-border pt-4 text-left"><span class="font-mono text-[10px] uppercase tracking-widest transition-colors text-muted-foreground group-hover:text-accent">Más Información</span><span class="text-sm text-accent transition-transform ">→</span></button></article><article class="group relative rounded-lg border bg-card p-8 transition-all hover:shadow-lg border-border hover:border-accent "><div class="mb-6 flex items-start justify-between gap-4"><span class="font-mono text-[10px] uppercase tracking-widest text-steel">04 / Paquete</span><span class="font-mono text-[10px] uppercase tracking-widest text-accent">ASTEROPE SISTEMA</span></div><h3 class="mb-4 text-lg font-semibold tracking-tight text-primary transition-colors group-hover:text-accent">Mejoramiento de RCM</h3><p class="text-sm leading-relaxed text-muted-foreground">Paquete
+ enfocado en la optimización del Ciclo de Gestión de Ingresos (RCM) en 
+organizaciones de salud, integrando análisis financiero y operativo, 
+remediación estructurada y monitoreo de calidad, con acompañamiento en 
+liderazgo para fortalecer resultados, control y alineación 
+organizacional.</p><div class="overflow-hidden transition-all duration-500 max-h-0 opacity-0"><ul class="space-y-2 font-mono text-[11px] uppercase tracking-wider text-accent"><li>✦ Consultoría</li><li>✦ Auditoría del Ciclo de Ingresos (Sector Salud)</li><li>✦ Diagnóstico y Plan de Remediación de Alto Nivel</li><li>✦ Análisis de Causa Raíz + Plan de Remediación Integral</li><li>✦ Marco de Monitoreo de Calidad</li><li>✦ Sesión de Desarrollo de Liderazgo 1:1</li><li>✦ Referidos para Servicios Profesional</li></ul></div><button type="button" class="mt-6 flex w-full cursor-pointer items-center justify-between border-t border-border pt-4 text-left"><span class="font-mono text-[10px] uppercase tracking-widest transition-colors text-muted-foreground group-hover:text-accent">Más Información</span><span class="text-sm text-accent transition-transform ">→</span></button></article><article class="group relative rounded-lg border bg-card p-8 transition-all hover:shadow-lg border-border hover:border-accent "><div class="mb-6 flex items-start justify-between gap-4"><span class="font-mono text-[10px] uppercase tracking-widest text-steel">05 / Paquete</span><span class="font-mono text-[10px] uppercase tracking-widest text-accent">ASTEROPE ÓRBITA</span></div><h3 class="mb-4 text-lg font-semibold tracking-tight text-primary transition-colors group-hover:text-accent">Remediación Organizacional</h3><p class="text-sm leading-relaxed text-muted-foreground">Orientado
+ a la remediación y fortalecimiento del desempeño organizacional, que 
+integra diagnóstico estructurado, análisis de causas raíz, medición del 
+desempeño y acciones correctivas, con acompañamiento en liderazgo para 
+impulsar mejora continua y alineación estratégica.</p><div class="overflow-hidden transition-all duration-500 max-h-0 opacity-0"><ul class="space-y-2 font-mono text-[11px] uppercase tracking-wider text-accent"><li>✦ Consultoría</li><li>✦ Diagnóstico y Plan de Remediación de Alto Nivel</li><li>✦ Análisis de Causa Raíz + Plan de Remediación Integral</li><li>✦ Marco de Medición del Desempeño</li><li>✦ Marco de Monitoreo de Calidad</li><li>✦ Personalizado – Tarjeta de Evaluación</li><li>✦ Personalizado – Plan de Acción Correctiva</li><li>✦ Sesión de Desarrollo de Liderazgo 1:1</li><li>✦ Referidos para Servicios Profesional</li></ul></div><button type="button" class="mt-6 flex w-full cursor-pointer items-center justify-between border-t border-border pt-4 text-left"><span class="font-mono text-[10px] uppercase tracking-widest transition-colors text-muted-foreground group-hover:text-accent">Más Información</span><span class="text-sm text-accent transition-transform ">→</span></button></article><article class="group relative rounded-lg border bg-card p-8 transition-all hover:shadow-lg border-border hover:border-accent "><div class="mb-6 flex items-start justify-between gap-4"><span class="font-mono text-[10px] uppercase tracking-widest text-steel">06 / Paquete</span><span class="font-mono text-[10px] uppercase tracking-widest text-accent">ASTEROPE PILAR</span></div><h3 class="mb-4 text-lg font-semibold tracking-tight text-primary transition-colors group-hover:text-accent">Marco de Capacitación</h3><p class="text-sm leading-relaxed text-muted-foreground">Orientado
+ al diseño e implementación de un sistema de capacitación estructurado, 
+que integra diagnóstico de brechas, definición de marcos, desarrollo de 
+contenidos y medición de resultados, asegurando una capacitación 
+consistente, alineada a los objetivos del negocio y enfocada en el 
+desarrollo sostenible de competencias y liderazgo.</p><div class="overflow-hidden transition-all duration-500 max-h-0 opacity-0"><ul class="space-y-2 font-mono text-[11px] uppercase tracking-wider text-accent"><li>✦ Consultoría</li><li>✦ Diagnóstico y Plan de Remediación de Alto Nivel</li><li>✦ Análisis de Causa Raíz + Plan de Remediación Integral</li><li>✦ Personalizado – Procedimiento Operativo Estándar (SOP)</li><li>✦ Apoyo para Desarrollo de Contenido de Capacitación</li><li>✦ Personalizado – Glidepath de Capacitación</li><li>✦ Taller de Desarrollo de Liderazgo</li><li>✦ Personalizado – Scorecard</li><li>✦ Plantilla – Pre-Prueba</li><li>✦ Plantilla – Post-Prueba</li><li>✦ Plantilla – Criterios de Finalización de Capacitación en el Puesto</li></ul></div><button type="button" class="mt-6 flex w-full cursor-pointer items-center justify-between border-t border-border pt-4 text-left"><span class="font-mono text-[10px] uppercase tracking-widest transition-colors text-muted-foreground group-hover:text-accent">Más Información</span><span class="text-sm text-accent transition-transform ">→</span></button></article><article class="group relative rounded-lg border bg-card p-8 transition-all hover:shadow-lg border-border hover:border-accent sm:col-span-2 lg:col-span-1"><div class="mb-6 flex items-start justify-between gap-4"><span class="font-mono text-[10px] uppercase tracking-widest text-steel">07 / Paquete</span><span class="font-mono text-[10px] uppercase tracking-widest text-accent">ASTEROPE UMBRAL</span></div><h3 class="mb-4 text-lg font-semibold tracking-tight text-primary transition-colors group-hover:text-accent">Incorporación de Empresas</h3><p class="text-sm leading-relaxed text-muted-foreground">Paquete
+ orientado a la incorporación y organización corporativa de empresas, 
+que integra definición estratégica, constitución legal y estructuración 
+documental, asegurando una base sólida, gobernable y preparada para 
+iniciar operaciones y escalar de forma ordenada.</p><div class="overflow-hidden transition-all duration-500 max-h-0 opacity-0"><ul class="space-y-2 font-mono text-[11px] uppercase tracking-wider text-accent"><li>✦ Consultoría</li><li>✦ Diagnóstico y Plan de Remediación de Alto Nivel</li><li>✦ Servicios de Incorporación de Empresas</li><li>✦ Personalizado – Acuerdo Operativo + Borradores de Resoluciones Clave + Ledger de Miembros</li><li>✦ Personalizado – Ledger Financiero</li><li>✦ Binder Corporativo</li><li>✦ Sello Corporativo</li><li>✦ Referidos para Servicios Profesional</li></ul></div><button type="button" class="mt-6 flex w-full cursor-pointer items-center justify-between border-t border-border pt-4 text-left"><span class="font-mono text-[10px] uppercase tracking-widest transition-colors text-muted-foreground group-hover:text-accent">Más Información</span><span class="text-sm text-accent transition-transform ">→</span></button></article></div></div></section><section id="contact" class="border-t border-border bg-primary py-24 md:py-32"><div class="mx-auto max-w-7xl px-6 md:px-8"><div class="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-24"><div><p class="font-mono text-xs font-medium uppercase tracking-[0.3em] text-accent mb-4">Póngase En Contacto</p><h2 class="text-4xl md:text-5xl font-light tracking-tight text-primary-foreground">¿Listo para la <span class="font-semibold">claridad?</span></h2><p class="mt-8 max-w-md text-primary-foreground/60 leading-relaxed">Aceptamos
+ un número limitado de proyectos de alto impacto por trimestre para 
+garantizar precisión absoluta. Contáctenos para comenzar.</p><div class="mt-12"><p class="font-mono text-[10px] uppercase tracking-widest text-primary-foreground/50 mb-4">Síganos</p><div class="flex items-center gap-4"><a href="https://wa.me/message/5U3ATX7RCK7JJ1" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="group relative flex h-14 w-14 items-center justify-center rounded-xl border border-accent/40 bg-gradient-to-br from-accent/30 via-primary-foreground/5 to-[hsl(var(--gold)/0.25)] text-primary-foreground shadow-[0_0_20px_-5px_hsl(var(--accent)/0.6),inset_0_1px_0_hsl(var(--primary-foreground)/0.15)] backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:border-[hsl(var(--gold))] hover:shadow-[0_0_30px_-2px_hsl(var(--gold)/0.7),inset_0_1px_0_hsl(var(--primary-foreground)/0.25)]"><span aria-hidden="true" class="pointer-events-none absolute inset-0 rounded-xl opacity-60 transition-opacity duration-300 group-hover:opacity-90" style="background: conic-gradient(from 180deg at 50% 50%, hsl(var(--accent)/0.5), hsl(var(--gold)/0.45), hsl(var(--sky-light)/0.45), hsl(var(--accent)/0.5)); filter: blur(10px);"></span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle relative h-6 w-6 text-primary-foreground drop-shadow-[0_0_6px_hsl(var(--gold)/0.7)] transition-colors group-hover:text-[hsl(var(--gold-light))]" style="--darkreader-inline-stroke: currentColor;" data-darkreader-inline-stroke=""><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg></a><a href="https://www.instagram.com/asteropeconsulting/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="group relative flex h-14 w-14 items-center justify-center rounded-xl border border-accent/40 bg-gradient-to-br from-accent/30 via-primary-foreground/5 to-[hsl(var(--gold)/0.25)] text-primary-foreground shadow-[0_0_20px_-5px_hsl(var(--accent)/0.6),inset_0_1px_0_hsl(var(--primary-foreground)/0.15)] backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:border-[hsl(var(--gold))] hover:shadow-[0_0_30px_-2px_hsl(var(--gold)/0.7),inset_0_1px_0_hsl(var(--primary-foreground)/0.25)]"><span aria-hidden="true" class="pointer-events-none absolute inset-0 rounded-xl opacity-60 transition-opacity duration-300 group-hover:opacity-90" style="background: conic-gradient(from 180deg at 50% 50%, hsl(var(--accent)/0.5), hsl(var(--gold)/0.45), hsl(var(--sky-light)/0.45), hsl(var(--accent)/0.5)); filter: blur(10px);"></span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram relative h-6 w-6 text-primary-foreground drop-shadow-[0_0_6px_hsl(var(--gold)/0.7)] transition-colors group-hover:text-[hsl(var(--gold-light))]" style="--darkreader-inline-stroke: currentColor;" data-darkreader-inline-stroke=""><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a><a href="https://www.linkedin.com/company/asteropeconsulting" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="group relative flex h-14 w-14 items-center justify-center rounded-xl border border-accent/40 bg-gradient-to-br from-accent/30 via-primary-foreground/5 to-[hsl(var(--gold)/0.25)] text-primary-foreground shadow-[0_0_20px_-5px_hsl(var(--accent)/0.6),inset_0_1px_0_hsl(var(--primary-foreground)/0.15)] backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:border-[hsl(var(--gold))] hover:shadow-[0_0_30px_-2px_hsl(var(--gold)/0.7),inset_0_1px_0_hsl(var(--primary-foreground)/0.25)]"><span aria-hidden="true" class="pointer-events-none absolute inset-0 rounded-xl opacity-60 transition-opacity duration-300 group-hover:opacity-90" style="background: conic-gradient(from 180deg at 50% 50%, hsl(var(--accent)/0.5), hsl(var(--gold)/0.45), hsl(var(--sky-light)/0.45), hsl(var(--accent)/0.5)); filter: blur(10px);"></span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin relative h-6 w-6 text-primary-foreground drop-shadow-[0_0_6px_hsl(var(--gold)/0.7)] transition-colors group-hover:text-[hsl(var(--gold-light))]" style="--darkreader-inline-stroke: currentColor;" data-darkreader-inline-stroke=""><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></div></div><div class="mt-12 space-y-6"><div class="group flex cursor-pointer items-center space-x-4 border-b border-primary-foreground/10 pb-4 transition-colors hover:border-accent"><span class="font-mono text-xs text-primary-foreground/40">CORREO</span><span class="text-base md:text-lg font-medium tracking-tight text-primary-foreground transition-colors group-hover:text-accent">contacto@asteropeconsulting.com</span></div><div class="group flex cursor-pointer items-center space-x-4 border-b border-primary-foreground/10 pb-4 transition-colors hover:border-accent"><span class="font-mono text-xs text-primary-foreground/40">UBICACIÓN</span><span class="text-base md:text-lg font-medium tracking-tight text-primary-foreground transition-colors group-hover:text-accent">Puerto Rico</span></div></div></div><div class="bg-primary-foreground/5 p-8 md:p-12 backdrop-blur-sm rounded-lg border border-primary-foreground/10 flex flex-col items-start justify-center"><h3 class="text-2xl md:text-3xl font-light tracking-tight text-primary-foreground mb-4">Comencemos su <span class="font-semibold">consulta</span></h3><p class="text-primary-foreground/60 leading-relaxed mb-8">Complete
+ nuestro breve formulario y nuestro equipo se pondrá en contacto con 
+usted para programar una conversación inicial sin costo.</p><a href="https://forms.office.com/Pages/DesignPageV2.aspx?origin=NeoPortalPage&amp;subpage=design&amp;id=RQlDsgN7fkeVhWQ05XCFHN_zy-t4m0lNqMK-pfU0LaNURVZCNEJRVFA0Tjg4V1U5NE5EODdTQkVSWi4u" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center gap-2 bg-gold px-8 py-3 rounded-md font-mono text-xs font-semibold uppercase tracking-widest text-primary animate-gold-pulse hover:bg-gold-light hover:scale-[1.03] transition-transform duration-300 mb-10">Solicitar Consulta<span aria-hidden="true" class="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span></a><div class="w-full"><p class="font-mono text-[10px] uppercase tracking-widest text-primary-foreground/40 mb-5">Nuestro proceso</p><ol class="relative space-y-5"><li class="relative flex items-start gap-4"><div class="flex flex-col items-center"><div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-accent font-mono text-[11px] font-semibold text-accent-foreground">01</div><div class="mt-1 h-8 w-px bg-primary-foreground/15" aria-hidden="true"></div></div><div class="pt-1.5"><p class="text-sm md:text-base font-medium tracking-tight text-primary-foreground">Consulta inicial</p><p class="mt-1 text-xs md:text-sm text-primary-foreground/60 leading-relaxed">Conversación sin costo para conocer su negocio.</p></div></li><li class="relative flex items-start gap-4"><div class="flex flex-col items-center"><div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-accent font-mono text-[11px] font-semibold text-accent-foreground">02</div><div class="mt-1 h-8 w-px bg-primary-foreground/15" aria-hidden="true"></div></div><div class="pt-1.5"><p class="text-sm md:text-base font-medium tracking-tight text-primary-foreground">Diagnóstico y plan de trabajo</p><p class="mt-1 text-xs md:text-sm text-primary-foreground/60 leading-relaxed">Evaluación a fondo y hoja de ruta a la medida.</p></div></li><li class="relative flex items-start gap-4"><div class="flex flex-col items-center"><div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-accent font-mono text-[11px] font-semibold text-accent-foreground">03</div></div><div class="pt-1.5"><p class="text-sm md:text-base font-medium tracking-tight text-primary-foreground">Ejecución</p><p class="mt-1 text-xs md:text-sm text-primary-foreground/60 leading-relaxed">Implementación con acompañamiento y resultados medibles.</p></div></li></ol></div></div></div></div></section></main><footer class="border-t border-border py-12 bg-card"><div class="mx-auto flex max-w-7xl flex-col justify-between px-6 md:px-8 text-[10px] font-mono uppercase tracking-[0.2em] text-muted-foreground md:flex-row"><p>© 2026 Asterope Consulting LLC</p><div class="mt-4 flex space-x-8 md:mt-0"><a href="#" class="hover:text-primary transition-colors">Política de Privacidad</a><a href="#" class="hover:text-primary transition-colors">Términos de Servicio</a><a href="#" class="hover:text-primary transition-colors">Legal</a></div></div></footer></div></div>
+  
+<aside id="lovable-badge" role="complementary" dir="ltr" lang="en" aria-label="Edit with Lovable">
+	<a id="lovable-badge-cta" target="_blank" href="https://lovable.dev/projects/59059dda-1f26-4b24-abec-39d752b1f330?utm_source=lovable-badge" rel="noopener nofollow" aria-label="Edit with Lovable">
+		<span id="lovable-badge-text">Edit with</span>
+		<svg xmlns="http://www.w3.org/2000/svg" width="52" height="16" fill="none" viewBox="0 0 52 16">
+  <path fill="#FCFBF8" fill-rule="evenodd" d="M20.318 5.25c.643 0 1.206.14 1.69.418a2.81 2.81 0 0 1 1.118 1.191c.266.513.4 1.115.4 1.807s-.134 1.296-.4 1.812a2.81 2.81 0 0 1-1.118 1.193c-.484.278-1.047.418-1.69.418s-1.208-.14-1.695-.418a2.85 2.85 0 0 1-1.125-1.193c-.262-.516-.393-1.12-.393-1.812s.131-1.294.393-1.807a2.848 2.848 0 0 1 1.125-1.191c.487-.279 1.052-.418 1.695-.418Zm0 1.425c-.27 0-.504.076-.7.228-.193.147-.34.37-.443.67-.102.295-.153.66-.153 1.093 0 .435.05.801.153 1.1.102.3.25.524.443.676.196.147.43.22.7.22.27 0 .502-.073.694-.22.193-.152.341-.375.443-.67.103-.299.153-.667.153-1.106 0-.65-.112-1.145-.337-1.481a1.08 1.08 0 0 0-.953-.51ZM32.7 5.25c.61 0 1.127.1 1.549.3.422.197.74.48.953.849.217.368.325.809.325 1.32v2.704c0 .29.02.562.062.812.044.245.108.4.19.466V12h-1.935a5.895 5.895 0 0 1-.105-.684 7.745 7.745 0 0 1-.02-.228 2.293 2.293 0 0 1-.151.203c-.205.242-.47.437-.793.584-.32.143-.685.215-1.094.215-.406 0-.77-.08-1.094-.24a1.845 1.845 0 0 1-.756-.682 1.984 1.984 0 0 1-.27-1.045c0-.606.178-1.069.535-1.388.356-.324.87-.534 1.542-.633l1.125-.16c.225-.032.403-.074.534-.123a.622.622 0 0 0 .288-.196.549.549 0 0 0 .093-.327.65.65 0 0 0-.11-.367.702.702 0 0 0-.32-.27c-.14-.07-.31-.105-.51-.105-.32 0-.576.083-.768.251-.193.164-.298.39-.314.676h-1.923c.016-.434.147-.82.393-1.155.25-.34.596-.604 1.039-.792.442-.189.954-.283 1.535-.283Zm.99 3.498a.98.98 0 0 1-.215.14 2.49 2.49 0 0 1-.584.178l-.473.092c-.315.061-.553.156-.713.283-.155.127-.233.305-.233.534 0 .23.084.412.252.547.168.135.383.203.645.203s.494-.058.694-.173c.201-.118.355-.282.461-.49.11-.21.166-.448.166-.714v-.6Zm4.526-2.375c.065-.125.138-.243.221-.349.197-.25.437-.44.719-.571.282-.135.6-.203.952-.203.528 0 .988.138 1.377.412.389.275.688.67.896 1.186.21.512.314 1.12.314 1.824 0 .7-.107 1.309-.32 1.825-.213.512-.518.906-.915 1.18-.393.275-.854.412-1.383.412-.352 0-.667-.062-.946-.184a1.832 1.832 0 0 1-.7-.554 2.2 2.2 0 0 1-.234-.383V12h-1.843V3h1.862v3.373Zm1.284.296c-.274 0-.51.085-.707.253-.192.163-.338.397-.436.7a3.376 3.376 0 0 0-.148 1.05c0 .406.05.759.148 1.058.098.299.243.53.436.694.197.164.433.246.707.246.279 0 .512-.082.7-.246.193-.164.336-.395.43-.694.099-.3.148-.652.148-1.058 0-.405-.05-.757-.147-1.056-.095-.299-.238-.53-.43-.694a1.015 1.015 0 0 0-.7-.253Zm9.416-1.419c.602 0 1.136.131 1.604.393.466.262.829.643 1.086 1.143.263.5.394 1.097.394 1.794 0 .25-.002.449-.006.596H47.51c.018.288.071.538.164.75a1.3 1.3 0 0 0 .491.596c.214.13.465.196.757.196.319 0 .583-.082.792-.246.209-.167.34-.403.393-.706h1.862a2.48 2.48 0 0 1-.485 1.235 2.54 2.54 0 0 1-1.051.805c-.439.188-.949.283-1.53.283-.655 0-1.225-.125-1.708-.375a2.672 2.672 0 0 1-1.13-1.143c-.267-.508-.4-1.137-.4-1.887 0-.712.14-1.327.418-1.843a2.86 2.86 0 0 1 1.155-1.186c.491-.27 1.051-.405 1.678-.405Zm-.044 1.345c-.274 0-.516.068-.725.203a1.29 1.29 0 0 0-.479.59 2.045 2.045 0 0 0-.132.498h2.562a1.873 1.873 0 0 0-.138-.602 1.061 1.061 0 0 0-.418-.516 1.243 1.243 0 0 0-.67-.173Z" clip-rule="evenodd" style="--darkreader-inline-fill: var(--darkreader-text-fcfbf8, #eee8d6);" data-darkreader-inline-fill=""></path>
+  <path fill="#FCFBF8" d="m26.605 9.995 1.342-4.566h1.924L27.628 12h-2.07l-2.33-6.57h1.98l1.397 4.565Zm-13.013.143h2.256c1.632 0 1.421 1.837 1.418 1.861h-5.603V3h1.93v7.138Zm31.516 1.861h-1.862V3h1.862v8.999Z" style="--darkreader-inline-fill: var(--darkreader-text-fcfbf8, #eee8d6);" data-darkreader-inline-fill=""></path>
+  <path fill="url(#a)" fill-rule="evenodd" d="M2.7 3c1.492 0 2.7 1.192 2.7 2.663v1.012h.9c1.49 0 2.7 1.192 2.7 2.662S7.791 12 6.3 12H0V5.663C0 4.193 1.209 3 2.7 3Z" clip-rule="evenodd"></path>
+  <defs>
+    <radialGradient id="a" cx="0" cy="0" r="1" gradientTransform="matrix(-1.54236 7.07838 -10.231 -2.15602 4.627 5.022)" gradientUnits="userSpaceOnUse">
+      <stop offset=".106" stop-color="#FE7B02" style="--darkreader-inline-stopcolor: var(--darkreader-background-fe7b02, #cb6201);" data-darkreader-inline-stopcolor=""></stop>
+      <stop offset=".394" stop-color="#FE3F21" style="--darkreader-inline-stopcolor: var(--darkreader-background-fe3f21, #b81a01);" data-darkreader-inline-stopcolor=""></stop>
+      <stop offset=".608" stop-color="#F858BC" style="--darkreader-inline-stopcolor: var(--darkreader-background-f858bc, #950660);" data-darkreader-inline-stopcolor=""></stop>
+      <stop offset=".929" stop-color="#575ECF" style="--darkreader-inline-stopcolor: var(--darkreader-background-575ecf, #282e8c);" data-darkreader-inline-stopcolor=""></stop>
+    </radialGradient>
+  </defs>
+</svg>
+
+
+	</a>
+	
+	<span id="lovable-badge-divider" aria-hidden="true"></span>
+	
+	<button id="lovable-badge-close" aria-label="Dismiss" title="Dismiss" type="button">
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" aria-hidden="true">
+			<path d="M10.646 4.646a.5.5 0 1 1 .707.708L8.707 8l2.646 2.646a.5.5 0 1 1-.707.707L8 8.707l-2.646 2.646a.5.5 0 1 1-.708-.707L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708L8 7.293l2.646-2.647Z"></path>
+		</svg>
+	</button>
+</aside>
+<script>
+	// Don't show the lovable-badge if the page is in an iframe or if it's being rendered by puppeteer (screenshot service)
+	if (window.self !== window.top || navigator.userAgent.includes('puppeteer')) {
+		// the page is in an iframe
+		var badge = document.getElementById('lovable-badge');
+		if (badge) {
+			badge.style.display = 'none';
+		}
+	}
+
+	// Add click event listener to close button with animation
+	var closeButton = document.getElementById('lovable-badge-close');
+	if (closeButton) {
+		closeButton.addEventListener('click', function(event) {
+			event.preventDefault();
+			event.stopPropagation();
+			var badge = document.getElementById('lovable-badge');
+			if (badge) {
+				badge.classList.add('closing');
+				setTimeout(function() {
+					if (badge) {
+						badge.style.display = 'none';
+					}
+				}, 240);
+			}
+		});
+	}
+</script>
+
+
+<div id="automa-palette"></div></body></html>
