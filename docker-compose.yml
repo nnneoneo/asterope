@@ -14,9 +14,9 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.docker.network=web"
-      - "traefik.http.routers.neovara.rule=Host(`asterope.neovara.ltd`)"
-      - "traefik.http.routers.neovara.entrypoints=websecure"
-      - "traefik.http.routers.neovara.tls.certresolver=le"
-      - "traefik.http.services.neovara.loadbalancer.server.port=80"
+      - "traefik.http.routers.asterope.rule=Host(`asterope.neovara.ltd`)"
+      - "traefik.http.routers.asterope.entrypoints=websecure"
+      - "traefik.http.routers.asterope.tls.certresolver=le"
+      - "traefik.http.services.asterope.loadbalancer.server.port=4208"
     networks:
       - web

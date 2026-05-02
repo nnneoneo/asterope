@@ -14,7 +14,7 @@ WORKDIR /app
 
 ENV NODE_ENV=production
 ENV HOST=0.0.0.0
-ENV PORT=80
+ENV PORT=4208
 
 COPY --from=build /app/.output ./.output
 
