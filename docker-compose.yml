@@ -1,9 +1,5 @@
 version: "3.9"
 
-networks:
-  web:
-    external: true
-
 services:
   frontend:
     build:
@@ -11,6 +7,10 @@ services:
       dockerfile: Dockerfile
     container_name: asterope-frontend
     restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
     labels:
       - "traefik.enable=true"
       - "traefik.docker.network=web"
@@ -20,3 +20,7 @@ services:
       - "traefik.http.services.asterope.loadbalancer.server.port=4208"
     networks:
       - web
+
+networks:
+  web:
+    external: true
